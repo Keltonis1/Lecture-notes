@@ -1,0 +1,142 @@
+####################################################
+# Boolean Values                                   #
+####################################################
+
+# print(400 + 1 < 400)
+# print(12 * 60 >= 8 * 90)
+# print(5 == 5.0)
+
+# print(bool(0)) # False!
+# print(bool(1)) # True!
+
+
+# TODO: What will these examples print out?
+
+time = 10 # AM
+food_in_fridge = False
+
+# print(time < 11 and food_in_fridge)
+# print(time < 11 or food_in_fridge)
+# print(time < 11 and not food_in_fridge)
+
+
+####################################################
+# Conditionals!                                    #
+####################################################
+
+# Conditionals example
+
+food_in_fridge = False
+
+if not food_in_fridge:
+    print("Go buy some food!")
+
+
+"""
+TODO: Write a program that asks the user for a password. If the password matches
+      a different variable named "password", print "access granted"
+"""
+
+password = "password"
+# user_input =
+
+
+# TODO:
+
+it_is_raining = False
+todays_date = "June 16"
+
+
+# TODO: Predict what would happen if age = 10, 18, or 30
+
+age = 22
+
+if age > 22:
+    print('You can be a lecturer')
+elif age > 16:
+    print('You can be a teaching assistant')
+else:
+   print('Go study! You are a student')
+
+
+# TODO: Coding rock paper scissors using if-statements!
+
+player_1 = input("Enter your move")
+
+
+
+####################################################
+# String Indexing                                  #
+####################################################
+
+
+string = "banana"
+print(string[1:5]) # What will this print?
+print(string[:5])
+print(string[-1])
+print(string[0:5:2]) # same as string[:5:2] and string[::2]
+
+
+# TODO: Pair coding: Find someone's age! Use f-strings to make a print statement
+
+todays_date = "06/08/2025"      # enter today’s date here
+todays_day = todays_date[0:2]
+todays_month = todays_date[3:5]
+todays_year = todays_date[6:]
+
+
+user_input = input("enter your birthday")
+
+
+
+####################################################
+# Lists, Tuples and Dictionaries                   #
+####################################################
+
+# TODO: add two people to the list, Jeremy and Jackson
+
+people = ["James", "Jackie", "Jason"]
+
+
+# TODO: Experiment with lists and tuples. Find out what is and isn't possible
+
+# a = ['hello', "friend", '!']  # a list with 3 elements
+# len(a)
+# a[0]
+# a[2] = '!!!'
+
+# a = ('hello', "friend", '!')
+# len(a)
+# a[0]
+# a[2] = '!!!'
+
+# What if a[2] is a list? Try this:
+
+# a = ('hello', "friend", ['!'])
+# len(a)
+# a[0]
+# a[2][0] = '!!!'
+# print(a[2])
+
+
+# TODO: add zero to the start of the list
+
+ls = [1,2,3,4]
+
+
+# TODO: Make a list of tuples, with info on first and last names, and age:
+"""
+James Madison, 15
+Jackie Brown, 24
+Jason Chen, 23
+Jeremy Parker, 18
+Jackson Coll, 30
+"""
+
+
+# TODO: Make that a dictionary, with last name corresponding to first name and age.
+
+
+
+
+# Tic tac toe? with pre-written code for pair programming?? for the loops lecture
