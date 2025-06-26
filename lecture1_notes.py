@@ -28,7 +28,7 @@ name = "John"
 # TODO: Print name and age in the format: "<name> is <age> years old!"
 
 
-
+# examples of snake_case
 
 
 
@@ -45,7 +45,7 @@ name = "John"
 # print(type(5))
 # print(type(3.45))
 # print(type(-2.))
-# print(type("this is a string"))
+# print(type("what type is this?"))
 
 # print(type(int("5")))
 # print(type(int("5.3")))
@@ -92,3 +92,22 @@ his_age = "10.6"
 # TODO: Write a program that takes two peoples ages and returns the difference between them.
 
 # TODO: Pair programming challenge! Simple calculator. Write code below
+
+
+
+
+####################################################
+# Pair Programming                                 #
+####################################################
+
+"""
+PROBLEM 1:
+Make a python program, code a simple calculator that takes user input for two numbers.
+Print out the result of adding the two numbers together.
+"""
+
+"""
+PROBLEM 1:
+Make a python program, code a simple calculator that takes user input for two numbers.
+Print out the result of adding the two numbers together.
+"""
