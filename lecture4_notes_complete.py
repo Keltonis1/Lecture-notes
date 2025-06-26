@@ -1,5 +1,5 @@
 
-# Lecture 1: Functions, Scope, Modules, Debugging
+# Lecture 4: Functions, Scope, Modules, Debugging
 # Time: 3 hours
 # Structure: 60% Slides + Code Demos, 40% Pair Programming
 
@@ -93,6 +93,17 @@ def safe_divide(a, b):
         return a / b
     except ZeroDivisionError:
         return "Cannot divide by zero"
+
+
+def abs(x):
+    """ Assumes x is an int
+    Returns x if x>=0 and –x otherwise """
+    if x < -1:
+        print(x)
+        return -x
+    else:
+        print(x)
+        return x
 
 print(safe_divide(10, 0))
 
