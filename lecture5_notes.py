@@ -19,6 +19,8 @@
 ## Exercises:
 # Create a class for a `BankAccount` with `deposit()` and `withdraw()` methods.
 
+# Add a print account summary method (use __str__)
+
 ####################################################
 # Inheritance                                      #
 ####################################################
@@ -39,6 +41,7 @@
 
 ## Exercises:
 # Create a `Vehicle` class and extend it into `Car` and `Bike`.
+# Create a `Shape` class and inherit `Rectangle` and `Circle` with methods to compute area.
 
 ####################################################
 # File I/O                                         #

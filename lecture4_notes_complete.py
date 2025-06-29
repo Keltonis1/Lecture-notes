@@ -31,6 +31,20 @@ def is_even(n):
     return n % 2 == 0
 
 print(is_even(3), is_even(4))
+# 3. Write a function that takes in someone's first and last name as 
+# separate inputs and returns a string with the names combined
+
+f_name = input("Enter your first name: ")
+l_name = input("Enter your last name: ")
+
+def full_name(first, last):
+    return f"{first} {last}"
+
+# 4. Write a function that returns the minimum, maximum and the average of a list of numbers
+def min_max_avg(numbers):
+    return min(numbers), max(numbers), sum(numbers) / len(numbers)
+
+print(min_max_avg([2,3,4,5,8,9]))
 
 ## Tips for Teaching:
 # Emphasize function reuse and testing with different inputs.
@@ -65,6 +79,14 @@ def increment():
 increment()
 print("Counter:", counter)
 
+def outer():
+    x = "outer"
+    def inner():
+        print("Inner sees:", x)
+    inner()
+
+outer()
+
 ## Tips for Teaching:
 # Use diagrams to show local/global memory locations.
 
@@ -86,14 +108,17 @@ except ValueError:
 
 ## Exercises:
 # Fix broken code snippets with bugs.
-# Write a function that divides two numbers and handles division by zero.
+# Write a function that divides two numbers and handles division by zero and non number inputs.
 
 def safe_divide(a, b):
     try:
         return a / b
     except ZeroDivisionError:
         return "Cannot divide by zero"
+    except ValueError:
+        return "Please enter numbers only"    
 
+print(safe_divide(10, 0))
 
 def abs(x):
     """ Assumes x is an int
@@ -104,8 +129,6 @@ def abs(x):
     else:
         print(x)
         return x
-
-print(safe_divide(10, 0))
 
 ## Tips for Teaching:
 # Encourage students to debug before asking for help.

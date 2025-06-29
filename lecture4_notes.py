@@ -19,6 +19,11 @@
 
 # Write a function that returns True if a number is even, False otherwise.
 
+# Write a function that takes in someone's first and last name as 
+# separate inputs and returns a string with the names combined
+
+# Write a function that returns the minimum, maximum and the average of a list of numbers
+
 ####################################################
 # Scope                                            #
 ####################################################

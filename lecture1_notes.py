@@ -107,7 +107,7 @@ Print out the result of adding the two numbers together.
 """
 
 """
-PROBLEM 1:
+PROBLEM 2:
 Make a python program, code a simple calculator that takes user input for two numbers.
-Print out the result of adding the two numbers together.
+Print out the result of multiplying the two numbers together.
 """
