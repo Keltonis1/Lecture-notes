@@ -35,3 +35,28 @@ TODO: Modify your rock paper scissors game from last class such that you can res
 ####################################################
 # For Loops                                        #
 ####################################################
+
+# TODO: Make a for loop that modifies a list to add five to each element in it.
+
+numbers = [1,2,3,4,5,6]
+
+
+# TODO: Make a for loop that prints the numbers 1 through 10
+
+
+
+
+
+####################################################
+# Break and Continue                               #
+####################################################
+
+# TODO: Use a for loop with range, print every other number using
+#       continue, up until the number 20
+
+# for i in range(100):
+
+"""
+Pair Programming: Tic Tac Toe
+
+"""

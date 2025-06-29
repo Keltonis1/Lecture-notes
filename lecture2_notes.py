@@ -69,6 +69,27 @@ player_1 = input("Enter your move")
 # String Indexing                                  #
 ####################################################
 
+# TODO: Look through these examples
+
+name = "Frederick"
+
+name[0] # First element
+name[1] # Second element
+name[0:] # First element onward
+name[1:] # Second element onward
+name[::]  # same as name. Entire string
+name[:]  # same as name. Entire string
+name[0:3] # Elements 0, 1 and 2
+name[:3] # Elements 0, 1 and 2 same as above
+name[0::1] # Same as name or name[::]. Entire string. No element skipped
+name[0::2] # Skip every other element
+name[::2] # Skip every other element same as above
+name[::-1] # reverse string
+name[5::-1] # reverse starting at 5
+name[-1] # last element
+name[-2] # second last element
+name[-3:] # last 3 elementss
+
 
 string = "banana"
 print(string[1:5]) # What will this print?
@@ -77,13 +98,13 @@ print(string[-1])
 print(string[0:5:2]) # same as string[:5:2] and string[::2]
 
 
+
 # TODO: Pair coding: Find someone's age! Use f-strings to make a print statement
 
 todays_date = "06/08/2025"      # enter today’s date here
 todays_day = todays_date[0:2]
 todays_month = todays_date[3:5]
 todays_year = todays_date[6:]
-
 
 user_input = input("enter your birthday")
 

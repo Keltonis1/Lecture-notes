@@ -100,14 +100,14 @@ his_age = "10.6"
 # Pair Programming                                 #
 ####################################################
 
-"""
-PROBLEM 1:
-Make a python program, code a simple calculator that takes user input for two numbers.
-Print out the result of adding the two numbers together.
-"""
 
 """
 PROBLEM 1:
+Make a python program, taking as input someone's name. Greet this person!
+"""
+
+"""
+PROBLEM 2:
 Make a python program, code a simple calculator that takes user input for two numbers.
 Print out the result of adding the two numbers together.
 """
