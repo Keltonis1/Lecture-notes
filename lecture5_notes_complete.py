@@ -43,9 +43,6 @@ acct = BankAccount("Alice", 100)
 print(acct.deposit(50))
 print(acct.withdraw(200))
 
-## Exercises:
-# Create a class for a `Car` with attributes `make`, `model`, and `year`. Add a method `honk()`.
-
 # Section 2: Inheritance
 ## Description:
 # Teach how to create child classes from parent classes.
@@ -66,20 +63,39 @@ class Dog(Animal):
 
 print(Dog().speak())
 
-## Additional Example:
+## Exercises:
+# Create a `Vehicle` class and extend it into `Car` and `Bike`.
+
 class Vehicle:
-    def __init__(self, brand):
+    wheel_count=0
+    def __init__(self, brand, wheel_count):
         self.brand = brand
 
     def start(self):
         return f"{self.brand} is starting."
 
 class Car(Vehicle):
+    def __init__(self, brand):
+        super().__init__(brand)
+        super().wheel_count = 4
+
     def start(self):
         return f"{self.brand} car is zooming off."
+    
+class Bike(Vehicle):
+    def __init__(self, brand):
+        super().__init__(brand)
+        super().wheel_count = 2
 
+    def start(self):
+        return f"{self.brand} is parking my bike."
+
+my_vehicle = Vehicle()
 my_car = Car("Toyota")
+my_bike = Bike("Huffy")
+print(my_vehicle.start())
 print(my_car.start())
+print(my_bike.start())
 
 ## Exercises:
 # Create a `Shape` class and inherit `Rectangle` and `Circle` with methods to compute area.
