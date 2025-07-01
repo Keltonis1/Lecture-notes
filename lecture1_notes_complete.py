@@ -22,8 +22,6 @@ fruits = apples + oranges
 print("Hello! You have", fruits, "fruits!")
 """
 
-
-
 age = 20
 name = "John"
 
