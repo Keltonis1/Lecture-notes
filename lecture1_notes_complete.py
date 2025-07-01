@@ -106,10 +106,13 @@ difference = int(float(my_age)) - int(float(his_age))
 
 # TODO: Uncomment the line above, then print a statement in the format: "Okay. Delivering your <food> now."
 
+# print("Okay. Delivering your", food_to_deliver, "now.")
+
 
 # TODO: Write a program that takes someone's name and greets them.
 
-
+name = input("What's your name?")
+print("Hello,", name, "!")
 
 ####################################################
 # Pair Programming                                 #
@@ -118,11 +121,13 @@ difference = int(float(my_age)) - int(float(his_age))
 
 """
 PROBLEM 1:
-Make a python program, taking as input someone's name. Greet this person!
+Make a python program, that takes two user inputs, each for a number.
+Print out the result of multiplying the two numbers together.
 """
+
 
 """
 PROBLEM 2:
-Make a python program, code a simple calculator that takes user input for two numbers.
-Print out the result of multiplying the two numbers together.
+Make a python program that takes in 2 floating point numbers. Cast these to
+integers and print out the result of adding them together.
 """
