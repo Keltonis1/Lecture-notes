@@ -18,7 +18,7 @@ fruits = apples + oranges
 # TODO: In a cordial way, tell the user how many fruits we have
 
 """
-# Answers
+# ANSWER:
 print("Hello! You have", fruits, "fruits!")
 """
 
@@ -30,14 +30,14 @@ name = "John"
 # TODO: Print name and age in the format: "<name> is <age> years old!" POLL
 
 """
-# Answers
+# ANSWER:
 print(name, "is", age, "years old!")
 """
 
 # examples of snake_case
 
 """
-# Answers
+# ANSWER:
 teachers_name = "kelson"
 game_duration = 10 # minutes
 weekend_plan = "beach"
@@ -68,7 +68,7 @@ his_age = "10.6"
 # TODO: Cast these into integers and find the difference in their ages. BUGFIX
 
 """
-# Answers
+# ANSWER:
 print(int(my_age))
 print(int(his_age))
 
@@ -106,13 +106,19 @@ difference = int(float(my_age)) - int(float(his_age))
 
 # TODO: Uncomment the line above, then print a statement in the format: "Okay. Delivering your <food> now."
 
-# print("Okay. Delivering your", food_to_deliver, "now.")
+"""
+# ANSWER:
+print("Okay. Delivering your", food_to_deliver, "now.")
+"""
 
 
-# TODO: Write a program that takes someone's name and greets them.
+# TODO: Write a program that takes a number and multiplies it by 5.
 
-name = input("What's your name?")
-print("Hello,", name, "!")
+"""
+# ANSWER:
+number = int(input("Please enter a number"))
+print("Your number multiplied by 5 is,", number * 5, "!")
+"""
 
 ####################################################
 # Pair Programming                                 #
@@ -125,9 +131,24 @@ Make a python program, that takes two user inputs, each for a number.
 Print out the result of multiplying the two numbers together.
 """
 
+"""
+# ANSWER:
+first_number = int(input("Please enter a number: "))
+second_number = int(input("Please enter another number: "))
+
+print("Your numbers multiplied by each other are", first_number * second_number, "!")
+"""
 
 """
 PROBLEM 2:
 Make a python program that takes in 2 floating point numbers. Cast these to
 integers and print out the result of adding them together.
+"""
+
+"""
+# ANSWER:
+first_number = int(float(input("Please enter a float: ")))
+second_number = int(float(input("Please enter another float: ")))
+
+print("Your numbers added to each other are", first_number + second_number, "!")
 """
