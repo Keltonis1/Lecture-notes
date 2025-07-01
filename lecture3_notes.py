@@ -46,6 +46,10 @@ numbers = [1,2,3,4,5,6]
 for i in range(10):
     print(i)
 
+# TODO: Use a for loop with the continue keyword, print every other number using
+#       continue, up until the number 20
+
+
 # TODO: Write this in a while loop format
 
 # ind = 0
@@ -57,8 +61,6 @@ for i in range(10):
 # Break and Continue                               #
 ####################################################
 
-# TODO: Use a for loop with range, print every other number using
-#       continue, up until the number 20
 
 # for i in range(100):
 
