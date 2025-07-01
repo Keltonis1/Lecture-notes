@@ -90,6 +90,8 @@ difference = int(float(my_age)) - int(float(his_age))
 # print(6 / 2)
 # print(6 // 2)
 # print(7.5 // 3)
+# print(20 % 4)
+# print(23 % 4)
 # print(7.5 % 3)
 # print(5 ** 4)
 # print(2 * 3 + 1)
@@ -104,7 +106,8 @@ difference = int(float(my_age)) - int(float(his_age))
 
 # TODO: Uncomment the line above, then print a statement in the format: "Okay. Delivering your <food> now."
 
-# TODO: Write a program that takes two peoples ages and returns the difference between them.
+
+# TODO: Write a program that takes someone's name and greets them.
 
 
 
