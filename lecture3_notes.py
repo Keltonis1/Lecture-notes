@@ -43,9 +43,15 @@ numbers = [1,2,3,4,5,6]
 
 # TODO: Make a for loop that prints the numbers 1 through 10
 
+for i in range(10):
+    print(i)
 
+# TODO: Write this in a while loop format
 
-
+# ind = 0
+# while ind < 10:
+#     print(ind)
+#     ind += 1
 
 ####################################################
 # Break and Continue                               #
