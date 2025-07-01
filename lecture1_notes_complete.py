@@ -4,10 +4,7 @@
 
 # TODO: Write a statement that prints "Hello, world!"
 
-
-
-
-
+# print("Hello, world!")
 
 
 ####################################################
@@ -20,26 +17,39 @@ fruits = apples + oranges
 
 # TODO: In a cordial way, tell the user how many fruits we have
 
+"""
+# Answers
+print("Hello! You have", fruits, "fruits!")
+"""
+
 
 
 age = 20
 name = "John"
 
-# TODO: Print name and age in the format: "<name> is <age> years old!"
+# TODO: Print name and age in the format: "<name> is <age> years old!" POLL
 
+"""
+# Answers
+print(name, "is", age, "years old!")
+"""
 
 # examples of snake_case
 
-
-
-
+"""
+# Answers
+teachers_name = "kelson"
+game_duration = 10 # minutes
+weekend_plan = "beach"
+my_weight = 180 # pounds
+"""
 
 
 ####################################################
 # Data types and Casting                           #
 ####################################################
 
-# TODO: Find what each of these prints out
+# TODO: Find what each of these prints out. POLL
 
 # print()
 # print(type(5))
@@ -55,7 +65,21 @@ name = "John"
 my_age = "5.2"
 his_age = "10.6"
 
-# TODO: Cast these into integers and find the difference in their ages
+# TODO: Cast these into integers and find the difference in their ages. BUGFIX
+
+"""
+# Answers
+print(int(my_age))
+print(int(his_age))
+
+print(float(my_age))
+print(float(his_age))
+
+print(int(float(my_age)))
+print(int(float(his_age)))
+
+difference = int(float(my_age)) - int(float(his_age))
+"""
 
 
 # TODO: Look through these examples of operations and make sure you know what they all do
@@ -72,15 +96,6 @@ his_age = "10.6"
 # print(2 * (3 + 1))
 
 
-
-
-
-
-
-
-
-
-
 ####################################################
 # User Input                                       #
 ####################################################
@@ -90,7 +105,6 @@ his_age = "10.6"
 # TODO: Uncomment the line above, then print a statement in the format: "Okay. Delivering your <food> now."
 
 # TODO: Write a program that takes two peoples ages and returns the difference between them.
-
 
 
 
