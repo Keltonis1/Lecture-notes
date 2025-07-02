@@ -4,7 +4,7 @@
 
 # TODO: Write a statement that prints "Hello, world!"
 
-
+print("Hello, World!")
 
 
 
@@ -17,18 +17,22 @@
 # examples of snake_case
 
 teachers_name = "kelson"
+
+Teachers_name = "kelson"
 game_duration = 10 # minutes
 weekend_plan = "beach"
 my_weight = 180 # pounds
+his_weight = 100
 
 
+# else = 40
 
 apples = 5
 oranges = 6
 fruits = apples + oranges
 
 # TODO: In a cordial way, tell the user how many fruits we have
-
+# print("You have", fruits, "fruits!")
 
 
 age = 20
@@ -37,9 +41,16 @@ name = "John"
 # TODO: Print name and age in the format: "<name> is <age> years old!"
 
 
+# print (name, "is", age, "years old.")
 
+# print (name, "is going surfing.")
+# Print ("John is", age, "years old")
 
+# Print (John_is, "age"_years_old)
 
+age = 20
+my_age = age
+your_age = my_age
 
 
 
