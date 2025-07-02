@@ -21,6 +21,8 @@ game_duration = 10 # minutes
 weekend_plan = "beach"
 my_weight = 180 # pounds
 
+
+
 apples = 5
 oranges = 6
 fruits = apples + oranges
