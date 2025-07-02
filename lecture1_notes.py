@@ -14,6 +14,13 @@
 # Introduction to variables                        #
 ####################################################
 
+# examples of snake_case
+
+teachers_name = "kelson"
+game_duration = 10 # minutes
+weekend_plan = "beach"
+my_weight = 180 # pounds
+
 apples = 5
 oranges = 6
 fruits = apples + oranges
@@ -28,7 +35,7 @@ name = "John"
 # TODO: Print name and age in the format: "<name> is <age> years old!"
 
 
-# examples of snake_case
+
 
 
 
