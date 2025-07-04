@@ -9,8 +9,8 @@
 # print(bool(0)) # False!
 # print(bool(1)) # True!
 
-
 # TODO: What will these examples print out?
+
 
 time = 10 # AM
 food_in_fridge = False
@@ -28,8 +28,8 @@ food_in_fridge = False
 
 food_in_fridge = False
 
-if not food_in_fridge:
-    print("Go buy some food!")
+# if not food_in_fridge:
+#     print("Go buy some food!")
 
 
 """
@@ -37,8 +37,11 @@ TODO: Write a program that asks the user for a password. If the password matches
       a different variable named "password", print "access granted"
 """
 
-password = "password"
-# user_input =
+# password = "password"
+# user_input = input("What is the password?")
+
+# if user_input == password:
+#     print("access granted")
 
 
 """
@@ -46,13 +49,18 @@ TODO: If it's raining and it's July 5th, print "I'm not going outside." Otherwis
       print "I'll go outside!"
 """
 
-it_is_raining = False
-todays_date = "July 5"
+# it_is_raining = False
+# todays_date = "July 5"
+
+# if it_is_raining and todays_date == "July 5":
+#     print("I'm not going outside")
+# else:
+#     print("I'll go outside!")
 
 
 # TODO: Predict what would happen if age = 10, 18, or 30
 
-# age = 22
+age = 22
 
 # if age > 22:
 #     print('You can be a lecturer')
@@ -64,8 +72,19 @@ todays_date = "July 5"
 
 # TODO: Coding rock paper scissors using input and if-statements!
 
-# player_1 = input("Enter your move")
+# player_1 = input("Enter your move: ")
+# player_2 = input("Enter your move: ")
 
+# case_1 = (player_1 == "rock" and player_2 == "scissors")
+# case_2 = (player_1 == "scissors" and player_2 == "paper")
+# case_3 = (player_1 == "paper" and player_2 == "rock")
+
+# if player_1 == player_2:
+#     print("it's a draw")
+# elif case_1 or case_2 or case_3:
+#     print("player 1 wins!")
+# else:
+#     print("player 2 wins!")
 
 
 ####################################################
@@ -94,37 +113,29 @@ name = "Frederick"
 # name[-3:] # last 3 elementss
 
 
-fruit = "banana"
+# TODO: figure out what this prints
+# string = "banana"
 # print(string[1:5]) # What will this print?
 # print(string[:5])
 # print(string[-1])
 # print(string[0:5:2]) # same as string[:5:2] and string[::2]
 
 
-len(name)
-len(fruit)
 
-print(f"I have {fruit}!")
-print(f"My name is {name}!")
-
-# TODO: Pair coding: Find someone's age! Use f-strings to make a print statement
+# TODO: Pair coding challenge! Find someone's age, use f-strings to make a print statement
 
 todays_date = "06/08/2025"      # enter today’s date here
 todays_day = todays_date[0:2]
 todays_month = todays_date[3:5]
 todays_year = todays_date[6:]
 
-user_input = input("enter your birthday")
+# user_input = input("enter your birthday")
 
 
 
 ####################################################
 # Lists, Tuples and Dictionaries                   #
 ####################################################
-
-# TODO: Experiment with list slicing
-thislist = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
-
 
 # TODO: add two people to the list, Jeremy and Jackson
 
@@ -159,19 +170,6 @@ people = ["James", "Jackie", "Jason"]
 ls = [1,2,3,4]
 
 
-# TODO: Make a 2-d array
-fruits = [
-    ["Banana", "Cherry"]
-    ["Apple", "Guava"]
-]
-fruits[0][0] # Banana
-fruits[1][0] # Apple
-fruits[0][1] # Cherry
-fruits[1][1] # Guava
-
-new_list = fruits
-
-
 # TODO: Make a list of tuples, with info on first and last names, and age:
 """
 James Madison, 15
@@ -187,4 +185,4 @@ Jackson Coll, 30
 
 
 
-# Tic tac toe? with pre-written code for pair programming?? for the loops lecturex
+# Tic tac toe? with pre-written code for pair programming?? for the loops lecture
