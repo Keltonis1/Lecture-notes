@@ -245,8 +245,3 @@ Jackson Coll, 30
 
 
 # TODO: Make that a dictionary, with last name corresponding to first name and age.
-
-
-
-
-# Tic tac toe? with pre-written code for pair programming?? for the loops lecturex
