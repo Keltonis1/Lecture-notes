@@ -101,11 +101,12 @@ fruit = "banana"
 # print(string[0:5:2]) # same as string[:5:2] and string[::2]
 
 
-len(name)
-len(fruit)
 
-print(f"I have {fruit}!")
-print(f"My name is {name}!")
+# print(len(name))
+# print(len(fruit))
+
+# print(f"I have {fruit}!")
+# print(f"My name is {name}!")
 
 # TODO: Pair coding: Find someone's age! Use f-strings to make a print statement
 
@@ -124,11 +125,37 @@ user_input = input("enter your birthday")
 
 # TODO: Experiment with list slicing
 thislist = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
+# print(thislist[0:2])
+# print(thislist[:4])
+# print(thislist[:4:2])
+# print(len(thislist))
 
 
-# TODO: add two people to the list, Jeremy and Jackson
+# TODO: add two people to the list, Jeremy and Jackson, with append, extend and insert
 
 people = ["James", "Jackie", "Jason"]
+
+
+# TODO: now remove James from the list and print it
+
+
+
+# TODO: add zero to the start of the list
+
+ls = [1,2,3,4]
+
+
+# TODO: Make a 2-d array
+fruits = [
+    ["Banana", "Cherry"]
+    ["Apple", "Guava"]
+]
+fruits[0][0] # Banana
+fruits[1][0] # Apple
+fruits[0][1] # Cherry
+fruits[1][1] # Guava
+
+new_list = fruits
 
 
 # TODO: Experiment with lists and tuples. Find out what is and isn't possible
@@ -151,34 +178,15 @@ people = ["James", "Jackie", "Jason"]
 # a[2][0] = '!!!'
 # print(a[2])
 
-'This is also a string'
-
-
-# TODO: add zero to the start of the list
-
-ls = [1,2,3,4]
-
-
-# TODO: Make a 2-d array
-fruits = [
-    ["Banana", "Cherry"]
-    ["Apple", "Guava"]
-]
-fruits[0][0] # Banana
-fruits[1][0] # Apple
-fruits[0][1] # Cherry
-fruits[1][1] # Guava
-
-new_list = fruits
-
 
 # TODO: Make a list of tuples, with info on first and last names, and age:
 """
 James Madison, 15
 Jackie Brown, 24
 Jason Chen, 23
-Jeremy Parker, 18
+Jeremy Chen, 18
 Jackson Coll, 30
+
 """
 
 
