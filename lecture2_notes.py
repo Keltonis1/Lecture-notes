@@ -108,14 +108,30 @@ fruit = "banana"
 # print(f"I have {fruit}!")
 # print(f"My name is {name}!")
 
-# TODO: Pair coding: Find someone's age! Use f-strings to make a print statement
 
-todays_date = "06/08/2025"      # enter today’s date here
+# TODO: Use f-strings to print out the sum of 2 values in a string format:
+#       "I have <apples> apples and <oranges> oranges, which is <apples +
+#       <oranges> fruits!"
+
+apples = 5
+oranges = 6
+
+
+
+
+
+"""
+TODO: Pair coding assignment:
+Get user input to any date in MM/DD/YYYY format. Use if statements and
+string slicing to determine whether this date is before or after today's date.
+"""
+
+todays_date = "07/05/2025"      # enter today’s date here
 todays_day = todays_date[0:2]
 todays_month = todays_date[3:5]
 todays_year = todays_date[6:]
 
-# user_input = input("enter your birthday")
+# user_input = input("Enter any date in MM/DD/YYYY format")
 
 
 
@@ -142,6 +158,7 @@ thislist = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
 # print(thislist[:4])
 # print(thislist[:4:2])
 # print(len(thislist))
+
 
 
 
