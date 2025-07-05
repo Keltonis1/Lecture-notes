@@ -28,8 +28,8 @@ food_in_fridge = False
 
 food_in_fridge = False
 
-if not food_in_fridge:
-    print("Go buy some food!")
+# if not food_in_fridge:
+#     print("Go buy some food!")
 
 
 """
@@ -115,13 +115,26 @@ todays_day = todays_date[0:2]
 todays_month = todays_date[3:5]
 todays_year = todays_date[6:]
 
-user_input = input("enter your birthday")
+# user_input = input("enter your birthday")
 
 
 
 ####################################################
-# Lists, Tuples and Dictionaries                   #
+# Lists                                            #
 ####################################################
+
+# BASIC LIST STRUCTURE
+thislist = ["apple", "banana", "cherry"]
+# print(thislist[0])
+# print(thislist[1])
+# print(thislist[2])
+
+# thislist[0] = 1
+# print(thislist[0])
+
+
+
+
 
 # TODO: Experiment with list slicing
 thislist = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
@@ -131,12 +144,13 @@ thislist = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
 # print(len(thislist))
 
 
+
 # TODO: add two people to the list, Jeremy and Jackson, with append, extend and insert
 
 people = ["James", "Jackie", "Jason"]
 
+# TODO: Now remove James from the list with pop() and remove() and print it
 
-# TODO: now remove James from the list and print it
 
 
 
@@ -145,17 +159,27 @@ people = ["James", "Jackie", "Jason"]
 ls = [1,2,3,4]
 
 
+
+
 # TODO: Make a 2-d array
 fruits = [
-    ["Banana", "Cherry"]
+    ["Banana", "Cherry"],
     ["Apple", "Guava"]
 ]
-fruits[0][0] # Banana
-fruits[1][0] # Apple
-fruits[0][1] # Cherry
-fruits[1][1] # Guava
+# print(fruits[0][0]) # Banana
+# print(fruits[1][0]) # Apple
+# print(fruits[0][1]) # Cherry
+# print(fruits[1][1]) # Guava
 
 new_list = fruits
+
+
+####################################################
+# Tuples                                           #
+####################################################
+
+# my_tuple = (1,2,3)
+# my_tuple[1] = 2
 
 
 # TODO: Experiment with lists and tuples. Find out what is and isn't possible
@@ -186,8 +210,9 @@ Jackie Brown, 24
 Jason Chen, 23
 Jeremy Chen, 18
 Jackson Coll, 30
-
 """
+
+# TODO: Use sort() to sort the list alphabetically by last name
 
 
 # TODO: Make that a dictionary, with last name corresponding to first name and age.
