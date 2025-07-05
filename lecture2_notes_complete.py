@@ -162,7 +162,6 @@ people = ["James", "Jackie", "Jason"]
 # a[2][0] = '!!!'
 # print(a[2])
 
-'This is also a string'
 
 
 # TODO: add zero to the start of the list

@@ -62,6 +62,7 @@ todays_date = "July 5"
 #    print('Go study! You are a student')
 
 
+
 # TODO: Coding rock paper scissors using input and if-statements!
 
 # player_1 = input("Enter your move")
@@ -171,7 +172,7 @@ people = ["James", "Jackie", "Jason"]
 
 
 
-# TODO: add zero to the start of the list
+# TODO: Class exercise: add zero to the start of the list
 
 ls = [1,2,3,4]
 
@@ -188,14 +189,25 @@ fruits = [
 # print(fruits[0][1]) # Cherry
 # print(fruits[1][1]) # Guava
 
+
+
+
+# ALIASING WARNING
+fruits = ["apple", "banana", "cherry"]
 new_list = fruits
+
+new_list[1] = "apple"
+# print(new_list)
+# print(fruits)
 
 
 ####################################################
 # Tuples                                           #
 ####################################################
 
-# my_tuple = (1,2,3)
+my_tuple = (1,2,3)
+new_tuple = my_tuple[:2]
+
 # my_tuple[1] = 2
 
 
