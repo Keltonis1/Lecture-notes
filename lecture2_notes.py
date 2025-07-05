@@ -6,16 +6,19 @@
 # print(12 * 60 >= 8 * 90)
 # print(5 == 5.0)
 
+# print(12+7 != 3+17)
+
 # print(bool(0)) # False!
-# print(bool(1)) # True!
+# print(bool(15)) # True!
 
 
 # TODO: What will these examples print out?
 
 time = 10 # AM
+booleanTime = time < 11
 food_in_fridge = False
 
-# print(time < 11 and food_in_fridge)
+# print(booleanTime and food_in_fridge)
 # print(time < 11 or food_in_fridge)
 # print(time < 11 and not food_in_fridge)
 
@@ -23,6 +26,14 @@ food_in_fridge = False
 ####################################################
 # Conditionals!                                    #
 ####################################################
+
+# is_raining = False
+# is_sunny = False
+
+# if is_raining or is_sunny:
+#     print("Umbrella")
+# print("Outside statement")
+
 
 # Conditionals example
 
@@ -34,11 +45,19 @@ food_in_fridge = False
 
 """
 TODO: Write a program that asks the user for a password. If the password matches
-      a different variable named "password", print "access granted"
+      a different variable named "password", print "access granted". If password doesnn't
+      match, print "access denied".
 """
 
-password = "password"
-# user_input =
+# password = "password"
+# user_input = str(input("Enter a password: "))
+
+# if user_input == password:
+#     print("access granted!")
+# elif len(user_input) < 2:
+#     print("password is too short")
+# else:
+#     print("access denied!")
 
 
 """
@@ -49,23 +68,59 @@ TODO: If it's raining and it's July 5th, print "I'm not going outside." Otherwis
 it_is_raining = False
 todays_date = "July 5"
 
+# if it_is_raining and todays_date == "July 5":
+#     print("I'm not going outside")
+# else:
+#     print("I'll go outside")
 
 # TODO: Predict what would happen if age = 10, 18, or 30
 
-# age = 22
+age = 30
+# if todays_date == "July 5":
+#     print("Not in chain")
 
-# if age > 22:
-#     print('You can be a lecturer')
-# elif age > 16:
-#     print('You can be a teaching assistant')
-# else:
-#    print('Go study! You are a student')
-
+if age > 22:
+    print('You can be a lecturer')
+    # print("In chain")
+if age > 16:
+    print('You can be a teaching assistant')
+    # print("In chain")
+else:
+   print('Go study! You are a student')
+#    print("In chain")
 
 
 # TODO: Coding rock paper scissors using input and if-statements!
 
-# player_1 = input("Enter your move")
+player_1 = input("Enter your move: ")
+player_2 = input("Enter your move: ")
+
+if player_1 == "Rock" and player_2 == "Rock":
+    print("That is a tie. Go again")
+
+if player_1 == "Rock":
+    if player_2 == "Rock":
+        print("That is a tie. Go again")
+    elif player_2 == "Paper":
+        print("Player 2 wins")
+    else:
+        print("Player 1 wins")
+elif player_1 == "Paper":
+    if player_2 == "Rock":
+        print("Player 1 wins")
+    elif player_2 == "Scissors":
+        print("Player 2 wins")
+    else:
+        print("That is a tie. Go again")
+else: # player_1 == "Scissors"
+    if player_2 == "Paper":
+        print("Player 1 wins")
+    elif player_2 == "Rock":
+        print("Player 2 wins")
+    else:
+        print("That is a tie. Go again")
+
+
 
 
 
