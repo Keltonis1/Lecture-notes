@@ -5,24 +5,47 @@
 # TODO: add two people to the list, Jeremy and Jackson, with append, extend and insert
 
 people = ["James", "Jackie", "Jason"]
+
 # people.append("Jeremy")
 # people.append("Jackson")
-
 # print(people)
-new_list = ["Jeremy", "Jackson"]
 
-people.extend(new_list)
-print(people)
+# new_list = ["Jeremy", "Jackson"]
+# people.extend(new_list)
+# print(people)
+
+# people.insert(3, "Jeremy")
+# people.insert(4, "Jackson")
+# print(people)
 
 
 # TODO: Now remove James from the list with pop() and remove() and print it
+# people.pop(0)
+# print(people)
 
-
+# people.remove("James")
+# print(people)
 
 
 # TODO: Class exercise: add zero to the start of the list
 
-ls = [1,2,3,4]
+nums = [1,2,3,4]
+
+# nums.insert(0, 0)
+# print(nums)
+
+
+# TODO: Make a 2-d array
+
+fruits = [
+    ["Banana", "Cherry"],
+    ["Apple", "Guava"]
+]
+# print(fruits[0][0]) # Banana
+# print(fruits[1][0]) # Apple
+# print(fruits[0][1]) # Cherry
+# print(fruits[1][1]) # Guava
+
 
 
 
@@ -33,25 +56,6 @@ new_list = fruits
 new_list[1] = "apple"
 # print(new_list)
 # print(fruits)
-
-
-# LIST OPERATION
-
-apples = ["apple"] * 5
-oranges = ["orange"] + ["orange"]
-
-
-
-# TODO: Make a 2-d array
-fruits = [
-    ["Banana", "Cherry"],
-    ["Apple", "Guava"]
-]
-# print(fruits[0][0]) # Banana
-# print(fruits[1][0]) # Apple
-# print(fruits[0][1]) # Cherry
-# print(fruits[1][1]) # Guava
-
 
 
 ####################################################
@@ -146,7 +150,7 @@ while <boolean expression is true>:
 # TODO: Code a while loop so you don't need to write this five times!
 
 
-# TODO: Analyze this simple while loop. What does it do?
+# TODO: Analyze this simple while loop. What does it do? Type in slido
 
 # while True:
 #     user_input = input("Type 'exit' to quit: ")
@@ -195,8 +199,17 @@ numbers = [1,2,3,4,5,6]
 
 # TODO: Make a for loop that prints the numbers 1 through 10
 
+for i in range(10):
+    print(i)
+
 
 # TODO: Write this in a while loop format
+
+# ind = 0
+# while ind < 10:
+#     print(ind)
+#     ind += 1
+
 
 
 # TODO: Use the provided for loop and the continue keyword, print every other number using
@@ -206,3 +219,15 @@ numbers = [1,2,3,4,5,6]
 
 
 # TODO: Do the same thing just by calling range and using a different step
+
+
+
+####################################################
+# Break and Continue                               #
+####################################################
+
+
+"""
+Pair Programming: Tic Tac Toe
+
+"""
