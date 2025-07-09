@@ -4,35 +4,46 @@
 
 # TODO: add two people to the list, Jeremy and Jackson, with append, extend and insert
 
-people = ["James", "Jackie", "Jason"]
-# people.append("Jeremy")
+people = ["James", "Jackie", "Jason", "Jason"]
+# people.append(2)
 # people.append("Jackson")
 
 # print(people)
 new_list = ["Jeremy", "Jackson"]
 
-people.extend(new_list)
-print(people)
+# people.extend(new_list)
+# print(people)
 
 
 # TODO: Now remove James from the list with pop() and remove() and print it
-
-
+# people.pop(3)
+# print(people)
 
 
 # TODO: Class exercise: add zero to the start of the list
 
-ls = [1,2,3,4]
-
+# ls = [1,2,3,4]
+# ls.insert(0,0)
+# ls.insert(3, 2.5)
+# # [0,1,2,2.5,3,4]
+# ls.pop(3)
+# print(ls)
 
 
 # ALIASING WARNING
-fruits = ["apple", "banana", "cherry"]
-new_list = fruits
+# fruits = ["apple", "banana", "cherry"]
+# new_list = fruits
 
-new_list[1] = "apple"
-# print(new_list)
-# print(fruits)
+# new_list[1] = "apple"
+# print(new_list, "New list")
+# print(fruits, "Fruits")
+
+# fruit = "apple"
+# new_fruit = fruit
+# new_fruit = "banana"
+
+# print(new_fruit)
+# print(fruit)
 
 
 # LIST OPERATION
@@ -40,18 +51,18 @@ new_list[1] = "apple"
 apples = ["apple"] * 5
 oranges = ["orange"] + ["orange"]
 
-
-
 # TODO: Make a 2-d array
 fruits = [
     ["Banana", "Cherry"],
     ["Apple", "Guava"]
 ]
+
 # print(fruits[0][0]) # Banana
 # print(fruits[1][0]) # Apple
 # print(fruits[0][1]) # Cherry
 # print(fruits[1][1]) # Guava
 
+#Play X and Os/ Tic Tac Toe
 
 
 ####################################################
@@ -62,7 +73,7 @@ fruits = [
 my_tuple = (1,2,3)
 new_tuple = my_tuple[:2]
 
-# my_tuple[1] = 2
+# print(my_tuple)
 
 
 # TODO: Experiment with lists and tuples. Find out what is and isn't possible
@@ -71,19 +82,20 @@ new_tuple = my_tuple[:2]
 # len(a)
 # a[0]
 # a[2] = '!!!'
+# print(a)
 
 # a = ('hello', "friend", '!')
-# len(a)
-# a[0]
+# print(len(a))
 # a[2] = '!!!'
+# print(a)
 
 # What if a[2] is a list? Try this:
 
-# a = ('hello', "friend", ['!'])
-# len(a)
-# a[0]
-# a[2][0] = '!!!'
-# print(a[2])
+a = ('hello', "friend", ['!'])
+len(a)
+a[0]
+a[2].append('!!!')
+print(a[2])
 
 
 # TODO: Make a list of tuples, with info on first and last names, and age:
@@ -113,8 +125,18 @@ dict["index"] = value
 
 
 # TODO: Populate phone numbers dictionary with names corresponding to numbers
+list_a = ["123-456", "234-567"]
+tuple_a = ("123-456", "234-567")
+dict_a = {
+    0: "123-456",
+    1: "234-567"
+    }
 
-phone_numbers = {}
+print(dict_a[0])
+
+# lists = []
+# tuples = ()
+# dicts = {}
 
 
 
