@@ -1,4 +1,29 @@
 ####################################################
+# For Loops                                        #
+####################################################
+
+# TODO: Make a for loop that modifies this list to add five to each element in it.
+
+numbers = [1,2,3,4,5,6]
+
+
+# TODO: Make a for loop that prints the numbers 1 through 10
+
+
+# TODO: Write this in a while loop format
+
+
+# TODO: Use the provided for loop and the continue keyword, print every other number using
+#       up until the number 20
+
+# for i in range(100):
+
+
+# TODO: Do the same thing just by calling range and using a different step
+
+
+
+####################################################
 # Functions                                        #
 ####################################################
 
@@ -19,10 +44,12 @@
 
 # Write a function that returns True if a number is even, False otherwise.
 
-# Write a function that takes in someone's first and last name as 
+# Write a function that takes in someone's first and last name as
 # separate inputs and returns a string with the names combined
 
 # Write a function that returns the minimum, maximum and the average of a list of numbers
+
+
 
 ####################################################
 # Scope                                            #
@@ -65,6 +92,8 @@
 
 ## Tips for Teaching:
 # Encourage students to debug before asking for help.
+
+
 
 ####################################################
 # Modules                                          #
