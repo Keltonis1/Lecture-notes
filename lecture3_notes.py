@@ -91,11 +91,11 @@ new_tuple = my_tuple[:2]
 
 # What if a[2] is a list? Try this:
 
-a = ('hello', "friend", ['!'])
-len(a)
-a[0]
-a[2].append('!!!')
-print(a[2])
+# a = ('hello', "friend", ['!'])
+# len(a)
+# a[0]
+# a[2].append('!!!')
+# print(a[2])
 
 
 # TODO: Make a list of tuples, with info on first and last names, and age:
@@ -125,14 +125,36 @@ dict["index"] = value
 
 
 # TODO: Populate phone numbers dictionary with names corresponding to numbers
+
 list_a = ["123-456", "234-567"]
 tuple_a = ("123-456", "234-567")
-dict_a = {
-    0: "123-456",
-    1: "234-567"
-    }
 
-print(dict_a[0])
+# dict_a = {
+#     "sayid's number": "123-456-7890",
+#     "armani's number": "234-567",
+#     "zachary's number": "3984298347",
+#     "jordanne's number": "834923872"
+# }
+
+# sayid_number = dict_a["sayid's number"]
+# dict_a["zachary's number"] = "3984298347"
+# dict_a.pop("armani's number")
+# dict_a["armani's number"]
+
+# items = dict_a.items()
+# print(items[3])
+
+groceries = {
+    "brocolli" : 6,
+    "pumpkin" : 8,
+    "candy corn" : 5,
+}
+
+# print(groceries["candy corn"])
+
+
+
+
 
 # lists = []
 # tuples = ()
@@ -152,6 +174,36 @@ BASIC STRUCTURE:
 while <boolean expression is true>:
     repeat this code body
 """
+
+# number = 1
+# while number < 10:
+#     print(number)
+#     number += 1
+
+#     # number = number + 1
+# print("Finished number = ", number)
+
+
+# print("3834".isdigit())
+
+# answer = input("Enter your age: ")
+# while not answer.isdigit():
+#     answer = input ("Enter your age: ")
+# age = int (answer)
+
+# print("Your age is: ", age)
+
+
+# password = "password"
+# user_input = str(input("Enter a password: "))
+
+# while user_input != password:
+#     print("Access denied, please try again")
+#     user_input = str(input("Enter a password: "))
+
+# print("Access granted")
+
+
 
 # Most simple while loop:
 
@@ -183,27 +235,50 @@ TODO: Modify your rock paper scissors game from last class such that you can res
       1 and 2 have won, and print it out after each round.
 """
 
-# if player_1 == "Rock":
-#     if player_2 == "Rock":
-#         print("That is a tie. Go again")
-#     elif player_2 == "Paper":
-#         print("Player 2 wins")
-#     else:
-#         print("Player 1 wins")
-# elif player_1 == "Paper":
-#     if player_2 == "Rock":
-#         print("Player 1 wins")
-#     elif player_2 == "Scissors":
-#         print("Player 2 wins")
-#     else:
-#         print("That is a tie. Go again")
-# else: # player_1 == "Scissors"
-#     if player_2 == "Paper":
-#         print("Player 1 wins")
-#     elif player_2 == "Rock":
-#         print("Player 2 wins")
-#     else:
-#         print("That is a tie. Go again")
+# player_1 = input("Enter your move, or quit: ")
+# player_2 = input("Enter your move, or quit: ")
+
+# player_1_win = 0
+# player_2_win = 0
+
+# while player_1 != "quit" and player_2 != "quit":
+
+#     if player_1 == "Rock":
+#         if player_2 == "Rock":
+#             print("That is a tie. Go again")
+#         elif player_2 == "Paper":
+#             print("Player 2 wins")
+#             player_2_win += 1
+#         else:
+#             print("Player 1 wins")
+#             player_1_win += 1
+#     elif player_1 == "Paper":
+#         if player_2 == "Rock":
+#             print("Player 1 wins")
+#             player_1_win += 1
+#         elif player_2 == "Scissors":
+#             print("Player 2 wins")
+#             player_2_win += 1
+#         else:
+#             print("That is a tie. Go again")
+#     else: # player_1 == "Scissors"
+#         if player_2 == "Paper":
+#             print("Player 1 wins")
+#             player_1_win += 1
+#         elif player_2 == "Rock":
+#             print("Player 2 wins")
+#             player_2_win += 1
+#         else:
+#             print("That is a tie. Go again")
+
+#     print(f"Player 1 has won {player_1_win} times")
+#     print(f"Player 2 has won {player_2_win} times")
+
+#     player_1 = input("Enter your move, or quit: ")
+#     player_2 = input("Enter your move: ")
+
+
+
 
 
 ####################################################

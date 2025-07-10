@@ -75,9 +75,9 @@ age = 22
 # player_1 = input("Enter your move: ")
 # player_2 = input("Enter your move: ")
 
-# case_1 = (player_1 == "rock" and player_2 == "scissors")
-# case_2 = (player_1 == "scissors" and player_2 == "paper")
-# case_3 = (player_1 == "paper" and player_2 == "rock")
+case_1 = (player_1 == "rock" and player_2 == "scissors")
+case_2 = (player_1 == "scissors" and player_2 == "paper")
+case_3 = (player_1 == "paper" and player_2 == "rock")
 
 # if player_1 == player_2:
 #     print("it's a draw")
