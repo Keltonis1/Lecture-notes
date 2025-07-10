@@ -1,4 +1,4 @@
-# Homework 3 Template: Loops 
+# Homework 3 Template: Loops
 
 # TODO: Create a loop with options:
 # 1. Add Profile
@@ -9,6 +9,10 @@
 
 # TODO: Use input() to get user choice
 # TODO: Add a while loop and if/elif blocks to handle options
-# TODO: Use list comprehension to print hobbies in uppercase
 
 # Hint: You need to add a profile first before you can view/edit a profile or add a hobby
+#       You will need some kind of data structure outside your loop to hold information
+
+
+# Supplemental (we didn't get to this, will likely go over in next lecture)
+# TODO: Use list comprehension to print hobbies in uppercase
