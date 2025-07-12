@@ -216,11 +216,42 @@ my_list = [
 
 # Write a function that returns True if a number is even, False otherwise.
 
+# def is_even(number):
+#     if number > 10:
+#         return True
+#     else:
+#         return False
+    
+# for i in range(5):
+#     num = int(input("Enter a number: "))
+
+#     res = is_even(num)
+#     if res == True:
+#         print("The number you entered is even")
+#     elif res == False:
+#         print("The number you entered is odd")
+
+
 # Write a function that takes in someone's first and last name as
 # separate inputs and returns a string with the names combined
+# def combine_name(first_name, last_name):
+#     return first_name + " " + last_name
 
-# Write a function that returns the minimum, maximum and the average of a list of numbers
+# first_name = "Sayid"
+# last_name = "Hinds"
 
+# print(combine_name(first_name, last_name), "is in the Python class")
+
+# Write a function that returns either the minimum, maximum or the average of a list of numbers
+# numberList = [2,5,9,13,15]
+
+# def numberStatistics(num_list, operation):
+#     if operation == "min":
+#         return min(num_list)
+#     elif operation == "max":
+#         return max(num_list)
+
+# print(numberStatistics(numberList, "max"))
 
 
 ####################################################
@@ -242,6 +273,17 @@ my_list = [
 
 ## Exercises:
 # Predict output for different scope examples.
+
+x = "universe"
+print("Main sees:", x) #1
+
+def outer(): 
+    def inner(): 
+        print("Inner sees:", x) #3
+    print("Outer sees:", x) #2
+    inner()
+
+outer()
 
 ####################################################
 # Debugging                                        #
