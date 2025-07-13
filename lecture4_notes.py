@@ -221,7 +221,7 @@ my_list = [
 #         return True
 #     else:
 #         return False
-    
+
 # for i in range(5):
 #     num = int(input("Enter a number: "))
 
@@ -277,8 +277,8 @@ my_list = [
 x = "universe"
 print("Main sees:", x) #1
 
-def outer(): 
-    def inner(): 
+def outer():
+    def inner():
         print("Inner sees:", x) #3
     print("Outer sees:", x) #2
     inner()
