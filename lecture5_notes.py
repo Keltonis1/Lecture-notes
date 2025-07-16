@@ -19,41 +19,131 @@ class <class name>:
         pass
 
 """
+# my_list = [1,2,3]
+# my_list.
 
-class My_House():
-    description = "Something you live in"
+# class My_House():
+#     description = "Something you live in"  # class attribute
 
-    def explode(self):
-        print("Boom!")
+#     def __init__(self, no_windows, no_doors): # init for initalize
+#         self.no_windows = no_windows  # instance attributes
+#         self.no_doors = no_doors
+#         pass
 
-house = My_House()
-print(house.description)
-house.explode()
+#     def print_no_windows(self, random_number):
+#         print(f"The number of windows in my house is {self.no_windows * random_number}")
 
-ls = [1,2,3]
-print(ls)
+#     def add_more_windows(self, number_windows):
+#         self.no_windows += number_windows
+
+# house1 = My_House(no_windows=10, no_doors=20)  # An instance of the My_House class with variables windows = 10 and doors = 20
+
+# house1.no_windows = 20
+# del house1.description
+# print(house1.description)
+
+# house1.print_no_windows(1)
+# house1.add_more_windows(10)
+# house1.print_no_windows(1)
+
+# My_House.print_no_windows(house1, 1)
+# My_House.add_more_windows(house1, 10)
+
+
+# house2 = My_House(20, 10)
+# print(house2.description)
+# print(house2.no_doors)
+
+
+
+# print(house.description)
+# house.explode()
+
+# house.description = "fat"
+
+# print(house.description)
+# print(house2.description)
 
 
 # Code Demo:
-class Dog:
+# class Dog:
+#     breed = "Golden retriever"
+#     def __init__(self, name):
+#         self.name = name
 
-    def __init__(self, name):
-        self.name = name
+#     def bark(self):
+#         print(f"{self.name} says woof!")
 
-    def bark(self):
-        print(f"{self.name} says woof!")
-
-    def rename(self, name):
-        self.name = name
+#     def rename(self, name):
+#         self.name = name
 
 
 # my_dog = Dog("Spot")
+# my_dog.name = "Rio"
+
+# print(my_dog.name)
+
+# my_dog.bark()
+
+
+
+
 # print(my_dog.bark())
 
 
-# TODO: Create a student class
+# TODO: Create a student class. Storing a student's Name, Age, Grade, and Classes
 
 
+class Student():
+    def __init__(self, name, age, grade, classes):
+        self.name = name
+        self.age = age
+        self.grade = grade
+        self.classes = classes
+
+    def print(self):
+        print(f"{self.name} is {self.age} and {self.grade}th grade in {self.classes}")
+
+student_1 = Student("Bob", 14, 7, ["Math", "Science", "English"])
+
+# student_1.name
+student_1.print()
+
+# my_dict = {
+#     "fsd" : 234
+# }
+
+# my_dict["fsd"]
+
+# Student.print(student_1)
+
+
+# formatted_string = f"{15 + 5}  "
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# class list(list):
+#     pass
+
+# my_list = list(range(5))
+# # print(my_list)
+
+# print(my_list.__dir__())
+
+# my_list.name = "hi!"
+# print(my_list.name)
 
 
 ## Exercises:
