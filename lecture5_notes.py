@@ -7,19 +7,63 @@
 # - self keyword
 # - instance variables and methods
 
-## Code Demo:
-# class Dog:
-#     def __init__(self, name):
-#         self.name = name
-#     def bark(self):
-#         return f"{self.name} says woof!"
-# d = Dog("Buddy")
-# print(d.bark())
+"""
+BASIC STRUCTURE:
+
+class <class name>:
+    def __init__(self, arg1, arg2):
+        self.arg1 = arg1
+        self.arg2 = arg2
+
+    def method1(self):
+        pass
+
+"""
+
+class My_House():
+    description = "Something you live in"
+
+    def explode(self):
+        print("Boom!")
+
+house = My_House()
+print(house.description)
+house.explode()
+
+ls = [1,2,3]
+print(ls)
+
+
+# Code Demo:
+class Dog:
+
+    def __init__(self, name):
+        self.name = name
+
+    def bark(self):
+        print(f"{self.name} says woof!")
+
+    def rename(self, name):
+        self.name = name
+
+
+# my_dog = Dog("Spot")
+# print(my_dog.bark())
+
+
+# TODO: Create a student class
+
+
+
 
 ## Exercises:
 # Create a class for a `BankAccount` with `deposit()` and `withdraw()` methods.
 
 # Add a print account summary method (use __str__)
+
+
+
+
 
 ####################################################
 # Inheritance                                      #

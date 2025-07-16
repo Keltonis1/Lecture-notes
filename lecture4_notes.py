@@ -274,16 +274,20 @@ my_list = [
 ## Exercises:
 # Predict output for different scope examples.
 
-x = "universe"
-print("Main sees:", x) #1
+# x = "universe"
+# print("Main sees:", x) #1
 
-def outer():
-    def inner():
-        print("Inner sees:", x) #3
-    print("Outer sees:", x) #2
-    inner()
+# def outer():
+#     def inner():
+#         x = 5
+#         print("Inner sees:", x) #3
+#         def even_inner():
+#             x = 5
+#             print("Inner sees:", x) #3
+#     print("Outer sees:", x) #2
+#     inner()
 
-outer()
+# outer()
 
 ####################################################
 # Debugging                                        #
