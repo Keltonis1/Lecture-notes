@@ -1,32 +1,24 @@
-# Homework 5 Template: Classes & Saving Data
+# Homework 5 Template: Classes
 
-# TODO: Create a class User with:
+# TODO: Create a class User and initialize:
 # name, age, student, hobbies, location
 
 # TODO: Add methods:
 # view_profile(), add_hobby(), calculate_age_in_months()
 
-# TODO: Save/load user to file (use JSON or plain text)
 
-# Example:
-# import json
+# STARTER CODE
+
 # class User:
-#     def __init__(self, name, age, student, hobbies, location):
-#         self.name = name
-#         self.age = age
-#         self.student = student
-#         self.hobbies = hobbies
-#         self.location = location
+#     def __init__()
 
-#     def view_profile(self):
-#         print(self.__dict__)
 
-#     def save_to_file(self, filename):
-#         with open(filename, "w") as f:
-#             json.dump(self.__dict__, f)
+"""
+TODO: Using inheritance, create a subclass Admin with
+      a new parameter password and method login.
+      Login should prompt the Admin for a password until
+      either the user exits or gets the password right.
+"""
 
-# @staticmethod
-# def load_from_file(filename):
-#     with open(filename, "r") as f:
-#         data = json.load(f)
-#         return User(**data)
+
+# Supplemental: add rock paper scissors as a method to the user class
