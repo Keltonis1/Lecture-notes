@@ -85,9 +85,6 @@ class <class name>:
 
 # my_dog.bark()
 
-
-
-
 # print(my_dog.bark())
 
 
@@ -107,7 +104,7 @@ class Student():
 student_1 = Student("Bob", 14, 7, ["Math", "Science", "English"])
 
 # student_1.name
-student_1.print()
+# student_1.print()
 
 # my_dict = {
 #     "fsd" : 234
@@ -119,20 +116,6 @@ student_1.print()
 
 
 # formatted_string = f"{15 + 5}  "
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 # class list(list):
 #     pass
@@ -165,17 +148,55 @@ student_1.print()
 # - super()
 
 ## Code Demo:
-# class Animal:
-#     def speak(self):
-#         return "Some sound"
-# class Dog(Animal):
-#     def speak(self):
-#         return "Woof"
-# print(Dog().speak())
+
+class Human:
+    def speak(self):
+        return "language"
+    def describe(self):
+        return "I am from earth."
+    
+class Barbados(Human):
+    def speak(self):
+        return "Bajan"
+    def food(self):
+        return "I love flying fish and cou-cou."
+    
+class Jamaica(Human):
+    def speak(self):
+        return "Jamaican"
+    def food(self):
+        return "I love jerk chicken and rice and peas."
+
+# print(Jamaica().describe())
+
 
 ## Exercises:
 # Create a `Vehicle` class and extend it into `Car` and `Bike`.
 # Create a `Shape` class and inherit `Rectangle` and `Circle` with methods to compute area.
+
+class Shape:
+    def __init__(self, no_sides):
+        self.no_sides = no_sides
+
+class Rectangle(Shape):
+    def __init__(self, no_sides, length, breadth):
+        super().__init__(no_sides)
+        self.length = length
+        self.breadth = breadth
+
+    def area(self):
+        print(f"The area is {self.length * self.breadth}")
+
+class Circle(Shape):
+    def __init__(self, no_sides, radius):
+        super().__init__(no_sides)
+        self.radius = radius
+    
+    def area(self):
+        print(f"The area is {(self.radius * 3.14) ** 2}")
+
+
+Rectangle(4, 2, 6).area()
 
 ####################################################
 # File I/O                                         #
