@@ -154,13 +154,13 @@ class Human:
         return "language"
     def describe(self):
         return "I am from earth."
-    
+
 class Barbados(Human):
     def speak(self):
         return "Bajan"
     def food(self):
         return "I love flying fish and cou-cou."
-    
+
 class Jamaica(Human):
     def speak(self):
         return "Jamaican"
@@ -191,7 +191,7 @@ class Circle(Shape):
     def __init__(self, no_sides, radius):
         super().__init__(no_sides)
         self.radius = radius
-    
+
     def area(self):
         print(f"The area is {(self.radius * 3.14) ** 2}")
 
