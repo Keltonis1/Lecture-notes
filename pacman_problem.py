@@ -55,7 +55,7 @@ class PacMan:
     . . . . . .
     . . . . . .
     . . . . . .
-    And a way we could access the point P would be grid[1][2].
+    And a way we could access the point P would be grid[1][2]. (row 1, col 2)
 
     Remember, the way to access elements in a 2-d list is: list[index_1][index_2].
     """
@@ -69,7 +69,7 @@ class PacMan:
 
     def make_game_board(width, height):
         """
-        Returns a game board where all the initial values are empty (which is " ").
+        Returns a game board where all the initial values are PacMan.EMPTY (which is " ").
         """
         board = []
         for i in range(height):
@@ -77,7 +77,7 @@ class PacMan:
 
         for i in range(height):
             for j in range(width):
-                board[i].append(PacMan.PELLET)
+                board[i].append(PacMan.EMPTY)
         return board
 
 
@@ -145,7 +145,9 @@ class PacMan:
         Now that we have working movement, let's make a function that will place
         pellets on the game board. Feel free to place pellets any way you'd like!
         I'd recommend using loops and possibly the random module. A useful function
-        is random.random(), which gives a random number between 0 and 1.
+        is random.random(), which gives a random number between 0 and 1. You can
+        also make an additional parameter in __init__, num_pellets, which will
+        control the amount of pellets that will be placed on the board.
 
         After you're done with this, update your play function to place pellets on
         the board.
@@ -164,5 +166,21 @@ class PacMan:
 
 
     """
-    Supplemental
+    SUPPLEMENTAL:
+
+    If you're done early, there's some ways we can build on this problem. Implement
+    whichever ones you'd like!
+
+        Ghosts: Add a class attribute, "G", which will correspond to a ghosts. Ghosts
+            will move randomly around the board, NOT destroy pellets, and will kill the
+            player upon contact with it.
+
+        Winning: Make it so the game will end when all pellets are collected!
+
+        Walls: Add walls around (or inside) the game board that the player cannot go
+            through. This will add a level of difficulty to the game.
+
+        Move Tracker: Add a counter which tracks the number of moves the player has taken.
+            You can make it so that the user only has a certain amount of moves they
+            can use to win!
     """
