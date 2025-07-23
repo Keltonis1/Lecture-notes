@@ -325,6 +325,9 @@ my_list = [
 ## Code Demo:
 # import random
 # print(random.randint(1, 10))
+import math
+
+
 
 ## Exercises:
 # Use math module to compute square root.
