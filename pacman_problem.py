@@ -164,6 +164,21 @@ class PacMan:
 
 
     """
-    Supplemental:
+    SUPPLEMENTAL:
 
+    If you're done early, there's some ways we can build on this problem. Implement
+    whichever ones you'd like!
+
+        Ghosts: Add a class attribute, "G", which will correspond to a ghosts. Ghosts
+            will move randomly around the board, NOT destroy pellets, and will kill the
+            player upon contact with it.
+
+        Winning: Make it so the game will end when all pellets are collected!
+
+        Walls: Add walls around (or inside) the game board that the player cannot go
+            through. This will add a level of difficulty to the game.
+
+        Move Tracker: Add a counter which tracks the number of moves the player has taken.
+            You can make it so that the user only has a certain amount of moves they
+            can use to win!
     """
