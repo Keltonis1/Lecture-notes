@@ -145,7 +145,9 @@ class PacMan:
         Now that we have working movement, let's make a function that will place
         pellets on the game board. Feel free to place pellets any way you'd like!
         I'd recommend using loops and possibly the random module. A useful function
-        is random.random(), which gives a random number between 0 and 1.
+        is random.random(), which gives a random number between 0 and 1. You can
+        also make an additional parameter in __init__, num_pellets, which will
+        control the amount of pellets that will be placed on the board.
 
         After you're done with this, update your play function to place pellets on
         the board.
