@@ -24,9 +24,12 @@ class PacMan:
     """
     def __init__(self, width, height, n_treasures, n_traps):
         self.board = PacMan.make_game_board(width, height)
+        self.height = height
+        self.width = width
         self.n_treasures = n_treasures
         self.n_traps = n_traps
         self.player_loc = (1,1)
+        self.points = 0
 
     def make_game_board(width, height):
         """
@@ -51,27 +54,39 @@ class PacMan:
         moves = {"w": (-1, 0), "s": (1, 0), "a": (0, -1), "d": (0, 1)}
         dx, dy = moves[direction]
 
+        next_location = (self.player_loc[0] + dx, self.player_loc[1] + dy)
+        if 0 > next_location[0] or next_location[0] > self.height-1 or \
+            0 > next_location[1] or next_location[1] > self.width - 1:
+            print("Out of bounds")
+            return
+
+        if self.board[next_location[0]][next_location[1]] == PacMan.PELLET:
+            self.points += 1
+
         self.board[self.player_loc[0]][self.player_loc[1]] = PacMan.EMPTY
         self.board[self.player_loc[0] + dx][self.player_loc[1] + dy] = PacMan.PLAYER
 
         self.player_loc = (self.player_loc[0] + dx, self.player_loc[1] + dy)
 
 
-    def place_walls(self):
+    def place_pellets(self):
+        import random
         for i in range(len(self.board)):
             for j in range(len(self.board[i])):
-                if (i == 0 or i == len(self.board) - 1) or (j == 0 or j == len(self.board[i]) - 1):
+                num = random.random()
+                if num > .5:
                     self.board[i][j] = PacMan.PELLET
 
 
     def play(self):
+        self.place_pellets()
         self.board[self.player_loc[0]][self.player_loc[1]] = "P"
-        self.place_walls()
         self.display_board()
         player_input = input("Move with w a s d, q to quit. ")
 
         while player_input != "q":
             self.move_player(player_input)
+            print(f"Points: {self.points}")
             self.display_board()
             player_input = input("Move with w a s d, q to quit. ")
 
