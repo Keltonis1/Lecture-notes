@@ -50,7 +50,14 @@ class SpaceInvaders:
         """
         Returns a 2D list filled with EMPTY spaces.
         """
-        return [[SpaceInvaders.EMPTY for _ in range(self.width)] for _ in range(self.height)]
+        board = []
+        for i in range(self.height):
+            board.append([])
+
+        for i in range(self.height):
+            for j in range(self.width):
+                board[i].append(SpaceInvaders.EMPTY)
+        return board
 
     def place_aliens(self, bomb_count):
         """
