@@ -55,7 +55,7 @@ class PacMan:
     . . . . . .
     . . . . . .
     . . . . . .
-    And a way we could access the point P would be grid[1][2].
+    And a way we could access the point P would be grid[1][2]. (row 1, col 2)
 
     Remember, the way to access elements in a 2-d list is: list[index_1][index_2].
     """
@@ -69,7 +69,7 @@ class PacMan:
 
     def make_game_board(width, height):
         """
-        Returns a game board where all the initial values are empty (which is " ").
+        Returns a game board where all the initial values are PacMan.EMPTY (which is " ").
         """
         board = []
         for i in range(height):
@@ -77,7 +77,7 @@ class PacMan:
 
         for i in range(height):
             for j in range(width):
-                board[i].append(PacMan.PELLET)
+                board[i].append(PacMan.EMPTY)
         return board
 
 
@@ -164,5 +164,6 @@ class PacMan:
 
 
     """
-    Supplemental
+    Supplemental:
+
     """
