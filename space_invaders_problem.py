@@ -8,12 +8,12 @@ that get closer to you every turn!
 """
 Our goal is for the game board to look something like this:
 
-👾 👾   👾 👾 👾  
-👾     👾   👾  
+👾 👾   👾 👾 👾
+👾     👾   👾
 
 
 
-      ^        
+      ^
 
 Where:
 👾 = alien
@@ -101,19 +101,23 @@ class SpaceInvaders:
         """
         print("Welcome to Space Invaders!")
         print("Controls: 'l' = left, 'r' = right, 's' = shoot, 'q' = quit")
+
         while not self.game_over:
             self.display_board()
             move = input("Your action: ").strip().lower()
             if move == "l" or move == "r":
                 self.move_player(move)
+
             elif move == "s":
                 self.shoot()
                 self.check_win()
                 if not self.game_over:
                     self.move_aliens_down()
+
             elif move == "q":
                 print("Game exited.")
                 break
+
             else:
                 print("Invalid input!")
 
