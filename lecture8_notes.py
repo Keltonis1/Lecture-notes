@@ -13,6 +13,11 @@ RED = (255, 0, 0)
 GREEN = (0, 255, 0)
 BLUE = (0, 0, 255)
 
+class Cat(pygame.sprite.Sprite):
+    def __init__(self):
+        super().__init__()
+
+
 # initialize pygame and create window
 pygame.init()
 pygame.mixer.init()
