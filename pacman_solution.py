@@ -5,7 +5,7 @@ class PacMan:
     PLAYER = "P"
     GHOST = "G"
 
-    def __init__(self, width, height, ): # num_ghosts
+    def __init__(self, width, height, ): # num_ghosts ):
         self.board = PacMan.make_game_board(width, height)
         self.height = height
         self.width = width
@@ -48,7 +48,7 @@ class PacMan:
 
         dy, dx = moves[direction]
 
-        next_location = (self.player_location[0] + dy, self.player_location[1] + dx) # (-1,0) self.board[4][0]
+        next_location = (self.player_location[0] + dy, self.player_location[1] + dx)
 
         if 0 > next_location[0] or next_location[0] > self.height-1 or \
             0 > next_location[1] or next_location[1] > self.width - 1:
@@ -125,7 +125,6 @@ class PacMan:
 
         self.display_board()
         player_input = input("Move with w a s d, q to quit. ")
-
         # move_count = 0
 
         while player_input != "q":
