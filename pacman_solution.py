@@ -5,13 +5,13 @@ class PacMan:
     PLAYER = "P"
     GHOST = "G"
 
-    def __init__(self, width, height, num_ghosts):
+    def __init__(self, width, height, ): # num_ghosts
         self.board = PacMan.make_game_board(width, height)
         self.height = height
         self.width = width
         self.player_location = (1,1)
-        self.num_ghosts = num_ghosts
-        self.ghosts = []
+        # self.num_ghosts = num_ghosts
+        # self.ghosts = []
         self.points = 0
 
 
@@ -35,15 +35,21 @@ class PacMan:
             print(" ".join(row))
 
 
-    def move_player(self, direction):
-        moves = {"w": (-1, 0), "s": (1, 0), "a": (0, -1), "d": (0, 1)}
+    def move_player(self, direction): # direction "w", "s", "a", "d"
+        moves = {"w": (-1, 0),
+                 "s": (1, 0),
+                 "a": (0, -1),
+                 "d": (0, 1),}
 
         while direction not in moves:
             direction = input("Enter a valid move: ")
+            if direction == "q":
+                return
 
-        dx, dy = moves[direction]
+        dy, dx = moves[direction]
 
-        next_location = (self.player_location[0] + dx, self.player_location[1] + dy)
+        next_location = (self.player_location[0] + dy, self.player_location[1] + dx) # (-1,0) self.board[4][0]
+
         if 0 > next_location[0] or next_location[0] > self.height-1 or \
             0 > next_location[1] or next_location[1] > self.width - 1:
             print("Out of bounds")
@@ -53,23 +59,25 @@ class PacMan:
             self.points += 1
 
         self.board[self.player_location[0]][self.player_location[1]] = PacMan.EMPTY
-        self.board[self.player_location[0] + dx][self.player_location[1] + dy] = PacMan.PLAYER
+        self.board[next_location[0]][next_location[1]] = PacMan.PLAYER
 
-        return (self.player_location[0] + dx, self.player_location[1] + dy)
+        return next_location
 
 
     def place_pellets(self):
         import random
+
         for i in range(len(self.board)):
             for j in range(len(self.board[i])):
                 num = random.random()
-                if num > .8:
+                if num > .7:
                     self.board[i][j] = PacMan.PELLET
 
 
     def place_ghosts(self, num_ghosts):
         import random
         placed_ghosts = 0
+
         while num_ghosts > placed_ghosts:
             rand_col = random.randint(0, self.width) - 1
             rand_row = random.randint(0, self.height) - 1
@@ -77,51 +85,56 @@ class PacMan:
                 self.board[rand_row][rand_col] = "G"
                 self.ghosts.append((rand_row, rand_col))
                 placed_ghosts += 1
-            else:
-                continue
 
-    def move_ghost(self, move, ghost_loc):
-        dx, dy = move
 
-        next_location = (ghost_loc[0] + dx, ghost_loc[1] + dy)
-        if 0 > next_location[0] or next_location[0] > self.height-1 or \
-            0 > next_location[1] or next_location[1] > self.width - 1:
-            return ghost_loc
-        elif self.board[next_location[0]][next_location[1]] == PacMan.GHOST:
-            return ghost_loc
-        elif self.board[next_location[0]][next_location[1]] == PacMan.PLAYER:
-            return ghost_loc
+    # def move_ghost(self, move, ghost_loc):
+    #     dx, dy = move
 
-        self.board[ghost_loc[0]][ghost_loc[1]] = PacMan.EMPTY
-        self.board[ghost_loc[0] + dx][ghost_loc[1] + dy] = PacMan.GHOST
+    #     next_location = (ghost_loc[0] + dx, ghost_loc[1] + dy)
+    #     if 0 > next_location[0] or next_location[0] > self.height-1 or \
+    #         0 > next_location[1] or next_location[1] > self.width - 1:
+    #         return ghost_loc
+    #     elif self.board[next_location[0]][next_location[1]] == PacMan.GHOST:
+    #         return ghost_loc
+    #     elif self.board[next_location[0]][next_location[1]] == PacMan.PLAYER:
+    #         return ghost_loc
 
-        return (ghost_loc[0] + dx, ghost_loc[1] + dy)
+    #     self.board[ghost_loc[0]][ghost_loc[1]] = PacMan.EMPTY
+    #     self.board[ghost_loc[0] + dx][ghost_loc[1] + dy] = PacMan.GHOST
 
-    def move_ghosts(self):
-        import random
-        for i, ghost in enumerate(self.ghosts):
-            direction = random.choice([(1,0),(-1,0),(0,-1),(0,1)])
-            self.ghosts[i] = self.move_ghost(direction, ghost)
+    #     return (ghost_loc[0] + dx, ghost_loc[1] + dy)
+
+    # def move_ghosts(self):
+    #     import random
+    #     for i, ghost in enumerate(self.ghosts):
+    #         direction = random.choice([(1,0),(-1,0),(0,-1),(0,1)])
+    #         self.ghosts[i] = self.move_ghost(direction, ghost)
 
     def win_check(self):
         for i in range(len(self.board)):
             for j in range(len(self.board[i])):
-                if self.board[i][j] == ".":
+                if self.board[i][j] == PacMan.PELLET:
                     return False
         return True
 
 
     def play(self):
         self.place_pellets()
-        self.place_ghosts(self.num_ghosts)
+        # self.place_ghosts(self.num_ghosts)
         self.board[self.player_location[0]][self.player_location[1]] = "P"
+
         self.display_board()
         player_input = input("Move with w a s d, q to quit. ")
 
+        # move_count = 0
+
         while player_input != "q":
             self.player_location = self.move_player(player_input)
-            self.move_ghosts()
+            # move_count += 1
+
+            # self.move_ghosts()
             print(f"Points: {self.points}")
+            # print(f"Moves: {move_count}")
             self.display_board()
             if self.win_check():
                 print(f"You win! Points: {self.points}")
@@ -130,5 +143,7 @@ class PacMan:
             player_input = input("Move with w a s d, q to quit. ")
 
 
-game = PacMan(10, 10, 4)
+game = PacMan(5, 5)
+# print(game.board)
+
 game.play()
